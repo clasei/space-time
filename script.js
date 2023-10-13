@@ -59,9 +59,19 @@ function toggleFullscreen() {
     }
 }
 
-document.addEventListener("keydown", function(event) { // spacebar play/pause functionality added here
+document.addEventListener("keydown", function(event) {
     if (event.code === "Space") {
         toggleTimer();
+        
+        // Cambio de color para el botón start/pause cuando es presionada la barra espaciadora.
+        const startBtn = document.getElementById("start-btn");
+        if (timerRunning) {
+            startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.1)"; // Color cuando está en Play.
+        } else {
+            startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.3)"; // Color cuando está en Pause.
+        }
+
         event.preventDefault();
     }
 });
+

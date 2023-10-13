@@ -6,11 +6,12 @@ body {
     min-height: 250px;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
     border-radius: 25px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
 }
@@ -26,7 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto', sans-serif;
     font-size: 4.9em;
@@ -39,31 +40,30 @@ body {
 .controls button {
     border-radius: 10px;
     transition: background-color 0.7s;
-    padding: 5px 25px;
-    margin: 15px 0;
-    margin-inline-end: 10px;
+    padding: 5px 30px;
+    margin: 20px 10px;
     border-color: rgba(245, 245, 245, 0.5);
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
 }
 
-.controls button:hover {
-    background-color: #333;
+.controls button:hover, .controls button:active {
+    background-color: rgba(0, 0, 0, 0.3);
     color: whitesmoke;
-}
-
-.controls button:active {
-    background-color: #333;
-    color: whitesmoke;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
 }
 
 .color-button {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: none;
     border-radius: 50%;
-    margin: 5px;
+    margin: 10px;
     margin-inline-end: 10px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+.color-button:hover {
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
 }
 
 .fullscreen-button {
@@ -98,13 +98,18 @@ body {
     }
 
     .controls button {
-        margin: 10px auto;
+        margin: 5vw auto;
+        margin-inline-end: 5vw;
     }
 
     .color-button {
-        width: 25px;
-        height: 25px;
-        margin: 3px;
+        width: 10vw;
+        height: 10vw;
+        margin: 2vw;
         margin-top: 10px;
+    }
+
+    .fullscreen-button {
+        display: none;
     }
 }

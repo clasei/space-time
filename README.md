@@ -16,4 +16,4 @@ I needed an easy way to look at time, so I built it.
 ## Contribution
 Feel free to raise issues, suggest features, or make pull requests. Your feedback is always welcome!
 
-p.s. Enjoy Your Space Time
+**Enjoy Your Space & Time**
