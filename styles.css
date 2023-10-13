@@ -39,7 +39,7 @@ body {
 
 .controls button {
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
     padding: 5px 25px;
     margin: 15px 0;
     margin-inline-end: 10px;
