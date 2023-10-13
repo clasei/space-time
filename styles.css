@@ -29,12 +29,11 @@ body {
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto', sans-serif;
-    font-size: 4.9em;
+    font-size: 4.7em;
     font-weight: 750;
-    letter-spacing: 10px;
     justify-content: space-between;
-    max-width: 38S%;
-    min-width: 31%;
+    max-width: 42%;
+    min-width: 350px;
     margin: 0 auto;
 }
 
@@ -78,11 +77,12 @@ body {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
     .time-display {
         font-size: 3em;
-        letter-spacing: 5px;
-        max-width: 45%;
+
+        max-width: 50%;
+        min-width: 100px;
     }
 
     .controls button {
