@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="easyTime → make it easy, take your time">
+    <meta name="keywords" content="time, timer, web development, front-end, javascript, clasei">
+    <meta name="author" content="clasei, clara seijo">
+    <meta property="og:image" content="images/openGraph.png">
+    <title>easyTime</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="time-display">
+            <div id="hour">0h</div>
+            <div id="minute">0m</div>
+            <div id="second">0s</div>
+        </div>
+        <div class="controls">
+            <button onclick="toggleTimer()" id="start-btn"> Start </button>
+            <button onclick="clearTimer()" id="reset-btn"> Reset </button>
+        </div>
+        <div class="color-options">
+            <button class="color-button" style="background-color: pink;" onclick="changeColor('pink')"></button>
+            <button class="color-button" style="background-color: darkcyan;" onclick="changeColor('darkcyan')"></button>
+            <button class="color-button" style="background-color: whitesmoke" onclick="changeColor('whitesmoke')"></button>
+            <button class="color-button" style="background-color: darkslategrey;" onclick="changeColor('darkslategrey')"></button>
+        </div>
+        <button class="fullscreen-button" onclick="toggleFullscreen()" title="Toggle Fullscreen">
+            <i class="material-icons" id="fullscreen-icon">fullscreen</i>
+        </button>
+    </div>
+</body>
+</html>
