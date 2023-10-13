@@ -16,8 +16,8 @@ body {
 }
 
 .h1 {
-    font-size: 0.90em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 550;
     color: rgba(77, 77, 77, 0.3)
 }
 
@@ -83,6 +83,10 @@ body {
     .container {
         margin: auto;
         padding: 20px;
+    }
+
+    .h1 {
+        font-size: 0.90em;
     }
 
     .time-display {

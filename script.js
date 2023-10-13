@@ -7,11 +7,11 @@ let timerRunning = false;
 function toggleTimer() {
     if (!timerRunning) {
         timerRunning = true;
-        document.getElementById("start-btn").innerText = "Pause";
+        document.getElementById("start-btn").innerText = "Pause ";
         startTimer();
     } else {
         timerRunning = false;
-        document.getElementById("start-btn").innerText = "Re-start";
+        document.getElementById("start-btn").innerText = "Re-start ";
         clearInterval(interval);
     }
 }
