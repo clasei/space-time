@@ -1,5 +1,5 @@
 # space-time
-an easy way to look at time while you are in [ your own ] space
+An easy way to look at time while you are in [ your own ] space.
 
 I needed an easy way to look at time, so I built it.
 
@@ -9,7 +9,7 @@ I needed an easy way to look at time, so I built it.
 - **Customizable**: Want it tailored to your needs? Just clone this repo and make it yours.
 
 ## How to Use
-1. Visit the [live site](https://clasei.github.io/space-time/) to use the timer.
+1. Visit the [live site](https://clasei.github.io/space-time/) to use the timer. 🚀
 2. To customize, clone this repository to your local machine.
 3. Navigate to the directory and make the desired changes.
 
