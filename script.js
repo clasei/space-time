@@ -39,9 +39,9 @@ function clearTimer() {
     minutes = 0;
     hours = 0;
     timerRunning = false;
-    document.getElementById("second").innerText = "0s";
-    document.getElementById("minute").innerText = "0m";
-    document.getElementById("hour").innerText = "0h";
+    document.getElementById("seconds").innerText = "0s";
+    document.getElementById("minutes").innerText = "0m";
+    document.getElementById("hours").innerText = "0h";
     document.getElementById("start-btn").innerText = "Start";
 }
 
