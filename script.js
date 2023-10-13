@@ -5,13 +5,18 @@ let hours = 0;
 let timerRunning = false;
 
 function toggleTimer() {
+    const startBtn = document.getElementById("start-btn");
     if (!timerRunning) {
         timerRunning = true;
-        document.getElementById("start-btn").innerText = "Pause ";
+        startBtn.innerText = "Pause ";
+        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.15)"; // play color
+        startBtn.style.color = "whitesmoke";
         startTimer();
     } else {
         timerRunning = false;
-        document.getElementById("start-btn").innerText = "Re-start ";
+        startBtn.innerText = "Re-start ";
+        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.3)"; // pause color
+        startBtn.style.color = "whitesmoke";
         clearInterval(interval);
     }
 }
@@ -43,6 +48,11 @@ function clearTimer() {
     document.getElementById("minutes").innerText = "0m";
     document.getElementById("hours").innerText = "0h";
     document.getElementById("start-btn").innerText = "Start";
+
+    const startBtn = document.getElementById("start-btn");
+    startBtn.innerText = "Start";
+    startBtn.style.backgroundColor = ""; // restores start/pause button's background color
+    startBtn.style.color = ""; // restores start/pause button's text color
 }
 
 function changeColor(color) {
@@ -62,16 +72,6 @@ function toggleFullscreen() {
 document.addEventListener("keydown", function(event) {
     if (event.code === "Space") {
         toggleTimer();
-        
-        // Cambio de color para el botón start/pause cuando es presionada la barra espaciadora.
-        const startBtn = document.getElementById("start-btn");
-        if (timerRunning) {
-            startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.1)"; // Color cuando está en Play.
-        } else {
-            startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.3)"; // Color cuando está en Pause.
-        }
-
         event.preventDefault();
     }
 });
-

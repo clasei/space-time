@@ -6,7 +6,6 @@ body {
     min-height: 250px;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
 }
 
 .container {
@@ -30,11 +29,11 @@ body {
     gap: 20px;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto', sans-serif;
-    font-size: 4.9em;
+    font-size: 5.2em;
     font-weight: 750;
     justify-content: space-between;
     max-width: 40%;
-    margin: 0px auto;
+    margin: 3vw auto;
 }
 
 .controls button {
@@ -79,6 +78,10 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+    .body {
+        overflow-y: hidden;
+    }
+    
     .container {
         margin: auto;
         padding: 20px;
@@ -89,12 +92,14 @@ body {
     }
 
     .time-display {
-        font-size: 3.5em;
+        font-size: 3.7em;
         justify-content: center;
         gap: 10px;
         width: auto;
         max-width: 100%;
-        padding: 15px;
+        margin: 10vw auto;
+
+
     }
 
     .controls button {
