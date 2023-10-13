@@ -9,13 +9,13 @@ function toggleTimer() {
     if (!timerRunning) {
         timerRunning = true;
         startBtn.innerText = "Pause ";
-        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.15)"; // play color
+        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.2)"; // play color
         startBtn.style.color = "whitesmoke";
         startTimer();
     } else {
         timerRunning = false;
         startBtn.innerText = "Re-start ";
-        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.3)"; // pause color
+        startBtn.style.backgroundColor = "rgba(0, 0, 0, 0.35)"; // pause color
         startBtn.style.color = "whitesmoke";
         clearInterval(interval);
     }
