@@ -11,7 +11,7 @@ function toggleTimer() {
         startTimer();
     } else {
         timerRunning = false;
-        document.getElementById("start-btn").innerText = "Start";
+        document.getElementById("start-btn").innerText = "Re-start";
         clearInterval(interval);
     }
 }
@@ -58,3 +58,10 @@ function toggleFullscreen() {
         document.getElementById("fullscreen-icon").innerText = "fullscreen";
     }
 }
+
+document.addEventListener("keydown", function(event) { // spacebar play/pause functionality added here
+    if (event.code === "Space") {
+        toggleTimer();
+        event.preventDefault();
+    }
+});
