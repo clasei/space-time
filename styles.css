@@ -88,7 +88,7 @@ body {
     }
 
     .h1 {
-        font-size: 0.90em;
+        font-size: 1em;
     }
 
     .time-display {
@@ -101,7 +101,7 @@ body {
     }
 
     .controls button {
-        margin: 5vw auto;
+        margin: 2vw auto;
         margin-inline-end: 5vw;
     }
 
@@ -109,7 +109,7 @@ body {
         width: 10vw;
         height: 10vw;
         margin: 2vw;
-        margin-top: 10px;
+        margin-top: 5vw;;
     }
 
     .fullscreen-button {
