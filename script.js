@@ -27,9 +27,9 @@ function startTimer() {
                 minutes = 0;
             }
         }
-        document.getElementById("second").innerText = `${seconds}s`;
-        document.getElementById("minute").innerText = `${minutes}m`;
-        document.getElementById("hour").innerText = `${hours}h`;
+        document.getElementById("seconds").innerText = `${seconds}s`;
+        document.getElementById("minutes").innerText = `${minutes}m`;
+        document.getElementById("hours").innerText = `${hours}h`;
     }, 1000);
 }
 
