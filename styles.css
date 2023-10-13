@@ -3,21 +3,22 @@ body {
     background-color: #f4f4f4;
     display: flex;
     height: 100vh;
+    min-height: 250px;
     justify-content: center;
     align-items: center;
 }
 
-
-.h1 {
-    font-size: 0.75em;
-    color: rgba(77, 77, 77, 0.3)
-}
-
 .container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+.h1 {
+    font-size: 0.90em;
+    font-weight: 600;
+    color: rgba(77, 77, 77, 0.3)
 }
 
 .time-display {
@@ -26,13 +27,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto', sans-serif;
     font-size: 4.5em;
-    font-weight: 700;
+    font-weight: 750;
     letter-spacing: 10px;
     justify-content: space-between;
-    max-width: 42%;
-    min-width: 25%;
+    max-width: 36%;
+    min-width: 33%;
     margin: 0 auto;
 }
 
@@ -69,16 +71,18 @@ body {
     bottom: 20px;
     right: 20px;
     border-radius: 5px;
-    background-color: rgba(245, 245, 245, 0.7);
-    color: whitesmoke;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+    border-color: lightgray;
+    background-color: rgba(245, 245, 245, 0.5);
+    color: lightgray;
+
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .time-display {
         font-size: 3em;
         letter-spacing: 5px;
+        max-width: 45%;
     }
 
     .controls button {
