@@ -1,5 +1,5 @@
 # space-time
-An easy way to look at time while you are in [ your own ] space.
+An easy way to look at time while you are in [ your ] space.
 
 I needed an easy way to look at time, so I built it.
 
