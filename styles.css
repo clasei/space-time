@@ -126,7 +126,9 @@ footer span {
     
     .container {
         margin: auto;
+        margin-bottom: 50px;
         padding: 20px;
+        padding-bottom: 30px;
     }
 
     .h1 {
@@ -144,7 +146,7 @@ footer span {
 
     .controls button {
         margin: 2vw auto;
-        margin-inline-end: 4vw;
+        margin-inline-end: 3vw;
         margin-left: 2vw;
         font-size: 0.9em;
     }
