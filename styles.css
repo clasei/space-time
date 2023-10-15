@@ -67,7 +67,7 @@ body {
 
 .fullscreen-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     border-radius: 5px;
     border-color: lightgray;
@@ -76,6 +76,44 @@ body {
 
 }
 
+#footer {
+    font-family: 'Roboto Mono', monospace;
+    color: darkslategrey;
+    font-size: 0.7em;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(92, 97, 255);
+    margin: 2px 3px;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    background-color: pink;
+    font-weight: bold;
+}
+
+footer span {
+    margin: 0 5px;
+}
+
+#currentYear {
+    margin-right: 1px;
+}
+
+#rocketIcon {
+    margin-left: 1px;
+    margin-right: 1px;
+}
 
 @media only screen and (max-width: 768px) {
     .body {
@@ -103,16 +141,22 @@ body {
     .controls button {
         margin: 2vw auto;
         margin-inline-end: 5vw;
+        font-size: 0.9em;
     }
 
     .color-button {
-        width: 10vw;
-        height: 10vw;
+        width: 7vw;
+        height: 7vw;
         margin: 2vw;
         margin-top: 5vw;;
     }
 
     .fullscreen-button {
         display: none;
+    }
+
+    #footer {
+        position: fixed; 
+        border-radius: 5px;
     }
 }

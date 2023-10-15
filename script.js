@@ -75,3 +75,8 @@ document.addEventListener("keydown", function(event) {
         event.preventDefault();
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("currentYear");
+    yearElement.textContent = new Date().getFullYear();
+});
