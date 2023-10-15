@@ -1,60 +1,72 @@
+let particlesActive = true;
+
 function initParticles() {
-    particlesJS('particles-js',
-    {
-        "particles": {
-            "number": {
-                "value": 50,
-                "density": {
+    if(window.pJSDom && window.pJSDom.length > 0){  // destroy particles first to allow toggle work
+        window.pJSDom[0].pJS.fn.vendors.destroypJS();
+        window.pJSDom = [];
+    }
+    if (particlesActive) {
+        particlesJS('particles-js',
+        {
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 1000
+                    }
+                },
+                "color": {
+                    "value": "#cccccc"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": false,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
                     "enable": true,
-                    "value_area": 1000
-                }
-            },
-            "color": {
-                "value": "#cccccc"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
+                    "distance": 150,
+                    "color": "#aaaaaa",
+                    "opacity": 0.5,
+                    "width": 1
                 },
-                "polygon": {
-                    "nb_sides": 5
-                },
-            },
-            "opacity": {
-                "value": 0.7,
-                "random": false,
-                "anim": {
-                    "enable": false
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
                 }
             },
-            "size": {
-                "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#aaaaaa",
-                "opacity": 0.5,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 2,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false
-            }
-        },
-        "retina_detect": true
-    });
+            "retina_detect": true
+        });
+    } else {
+        if(window.pJSDom && window.pJSDom.length > 0){
+            window.pJSDom[0].pJS.fn.vendors.destroypJS();
+        }
+    }
 }
 
 let interval;
@@ -136,11 +148,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const yearElement = document.getElementById("currentYear");
-    yearElement.textContent = new Date().getFullYear();
-});
-
-document.addEventListener("DOMContentLoaded", function() {
     initParticles();
     const yearElement = document.getElementById("currentYear");
     yearElement.textContent = new Date().getFullYear();
@@ -152,3 +159,10 @@ document.body.addEventListener("click", function() {
         hintElement.style.display = "none";
     }
 });
+
+document.getElementById('toggle-particles').addEventListener('change', function() {
+    particlesActive = !particlesActive;
+    initParticles();
+});
+
+
