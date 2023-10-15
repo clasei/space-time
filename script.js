@@ -23,7 +23,7 @@ function initParticles() {
                 },
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.7,
                 "random": false,
                 "anim": {
                     "enable": false
@@ -40,7 +40,7 @@ function initParticles() {
                 "enable": true,
                 "distance": 150,
                 "color": "#aaaaaa",
-                "opacity": 0.4,
+                "opacity": 0.5,
                 "width": 1
             },
             "move": {
