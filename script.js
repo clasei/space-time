@@ -1,3 +1,62 @@
+function initParticles() {
+    particlesJS('particles-js',
+    {
+        "particles": {
+            "number": {
+                "value": 50,
+                "density": {
+                    "enable": true,
+                    "value_area": 1000
+                }
+            },
+            "color": {
+                "value": "#cccccc"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                },
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#aaaaaa",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 2,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false
+            }
+        },
+        "retina_detect": true
+    });
+}
+
 let interval;
 let seconds = 0;
 let minutes = 0;
@@ -77,6 +136,12 @@ document.addEventListener("keydown", function(event) {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("currentYear");
+    yearElement.textContent = new Date().getFullYear();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    initParticles();
     const yearElement = document.getElementById("currentYear");
     yearElement.textContent = new Date().getFullYear();
 });
