@@ -5,7 +5,6 @@ function initParticles() {
         window.pJSDom[0].pJS.fn.vendors.destroypJS();
         window.pJSDom = [];
     }
-
     if (particlesActive) {
         particlesJS('particles-js',
         {

@@ -9,8 +9,6 @@ body {
     align-items: center;
     overflow-y: auto;
     padding: auto 10px;
-
-
 }
 
 .container {
@@ -87,7 +85,7 @@ body {
 }
 
 .custom-control {
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .fullscreen-button {
@@ -180,6 +178,10 @@ footer span {
 
     .fullscreen-button {
         display: none;
+    }
+
+    .custom-control {
+        margin-bottom: 50px;
     }
 
     #footer {
