@@ -27,7 +27,6 @@ body {
 
 .hint {
     font-size: 0.9rem;
-    text-decoration: underline;
     opacity: 0.5;
     transition: opacity 3s;
     cursor: pointer;
@@ -145,12 +144,11 @@ footer span {
     }
     
     .container {
-        margin: 25px auto;
         padding: 20px;
     }
 
     .heading {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .time-display {
