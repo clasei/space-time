@@ -2,24 +2,32 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    height: 100vh;
-    min-height: 250px;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    padding: 20px;
+    padding: auto 10px;
+
+
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.4);
-    padding: 15px;
+    padding: 30px;
+    margin: 25px auto;
     border-radius: 25px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
     max-height: 100%;
     overflow-y: auto;
+
+    position: relative;
+    bottom: 0;
 }
 
-.h1 {
+.heading {  
     font-size: 1.2em;
     font-weight: 550;
     color: rgba(77, 77, 77, 0.3);
@@ -28,19 +36,16 @@ body {
 
 .time-display {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
     color: rgba(0, 0, 0, 0.8);
-    font-family: 'Roboto', sans-serif;
     font-size: 5.2em;
     font-weight: 750;
-    justify-content: space-between;
     max-width: 40%;
     margin: 3vw auto;
 }
 
-.controls button {
+.controls > button {
     border-radius: 10px;
     transition: background-color 0.7s;
     padding: 5px 30px;
@@ -84,10 +89,11 @@ body {
     font-family: 'Roboto Mono', monospace;
     color: darkslategrey;
     font-size: 0.7em;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 10px 5px;
     width: 100%;
-    position: absolute;
+
+    position: fixed;
     bottom: 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -119,29 +125,28 @@ footer span {
     margin-right: 1px;
 }
 
-@media only screen and (max-width: 768px) {
-    .body {
+@media only screen and (max-width: 900px) {
+    body {
         overflow-y: auto;
+        padding: 15px;    
     }
     
     .container {
-        margin: auto;
-        margin-bottom: 50px;
+        margin: 25px auto;
         padding: 20px;
-        padding-bottom: 30px;
     }
 
-    .h1 {
+    .heading {
         font-size: 1em;
     }
 
     .time-display {
-        font-size: 3.7em;
+        font-size: 3.9em;
         justify-content: center;
         gap: 10px;
         width: auto;
         max-width: 100%;
-        margin: 10vw auto;
+        margin: 5vw auto;
     }
 
     .controls button {
@@ -154,8 +159,8 @@ footer span {
     .color-button {
         width: 30px;
         height: 30px;
-        margin: 2vw;
-        margin-top: 5vw;;
+        margin: 20px 15px;
+        margin-top: 30px;
     }
 
     .fullscreen-button {
@@ -163,7 +168,8 @@ footer span {
     }
 
     #footer {
-        position: fixed; 
-        border-radius: 5px;
+        position: fixed;
+        bottom: 0;
+        border-radius: 15px;
     }
 }
