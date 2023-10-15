@@ -145,3 +145,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const yearElement = document.getElementById("currentYear");
     yearElement.textContent = new Date().getFullYear();
 });
+
+document.body.addEventListener("click", function() {
+    const hintElement = document.querySelector(".hint");
+    if (hintElement) {
+        hintElement.style.display = "none";
+    }
+});
