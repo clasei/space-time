@@ -27,6 +27,20 @@ body {
     bottom: 0;
 }
 
+.hint {
+    font-size: 0.85rem;
+    text-decoration: underline;
+    opacity: 0.5;
+    transition: opacity 3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hint:hover {
+    opacity: 0.8;
+}
+
+
 .heading {  
     font-size: 1.2em;
     font-weight: 550;
