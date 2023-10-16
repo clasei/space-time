@@ -157,7 +157,8 @@ document.addEventListener("DOMContentLoaded", function() {
 document.body.addEventListener("click", function() {
     const hintElement = document.querySelector(".hint");
     if (hintElement) {
-        hintElement.style.display = "none";
+        hintElement.style.opacity = "0.25"; 
+        hintElement.style.transition = "opacity 0.5s"; 
     }
 });
 

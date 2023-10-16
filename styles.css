@@ -23,19 +23,6 @@ body {
     bottom: 0;
 }
 
-.hint {
-    font-size: 0.9rem;
-    opacity: 0.5;
-    transition: opacity 3s;
-    cursor: pointer;
-    margin: 25px;
-}
-
-.hint:hover {
-    opacity: 0.9;
-    font-weight: bold;
-}
-
 .heading {  
     font-size: 1.6em;
     font-weight: 550;
@@ -93,15 +80,29 @@ body {
 
 .custom-control-label {
     font-size: 0.8rem;
-    color: rgba(165, 165, 165, 0.85);
+    color: rgba(165, 165, 165, 0.75);
 }
 
 .custom-switch .custom-control-input:checked~.custom-control-label::before {
-    background-color: rgba(176, 176, 176, 0.85);
+    background-color: rgba(137, 137, 137, 0.5);
 }
 
 .custom-control-label::before {
     border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.hint {
+    font-size: 0.8rem;
+    opacity: 0.4;
+    transition: opacity 3s;
+    margin: 25px;
+}
+
+.hint:hover {
+    opacity: 0.9;
+    font-weight: bold;
+    cursor: none;
 }
 
 .fullscreen-button {
