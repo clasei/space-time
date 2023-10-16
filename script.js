@@ -22,15 +22,16 @@ function initParticles() {
                 "shape": {
                     "type": "circle",
                     "stroke": {
-                        "width": 0,
-                        "color": "#000000"
+                        "width": 0.5,
+                        "color": "#000000",
+                        "opacity": 0.5
                     },
                     "polygon": {
                         "nb_sides": 5
                     },
                 },
                 "opacity": {
-                    "value": 0.7,
+                    "value": 0.75,
                     "random": false,
                     "anim": {
                         "enable": false
@@ -47,7 +48,7 @@ function initParticles() {
                     "enable": true,
                     "distance": 150,
                     "color": "#aaaaaa",
-                    "opacity": 0.5,
+                    "opacity": 0.6,
                     "width": 1
                 },
                 "move": {
@@ -156,7 +157,8 @@ document.addEventListener("DOMContentLoaded", function() {
 document.body.addEventListener("click", function() {
     const hintElement = document.querySelector(".hint");
     if (hintElement) {
-        hintElement.style.display = "none";
+        hintElement.style.opacity = "0.25"; 
+        hintElement.style.transition = "opacity 0.5s"; 
     }
 });
 
