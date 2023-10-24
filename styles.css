@@ -143,16 +143,12 @@ footer a:hover {
 }
 
 footer span {
-    margin: 0 5px;
-}
-
-#currentYear {
-    margin-right: 1px;
+    margin: 0 0;
 }
 
 #rocketIcon {
-    margin: auto 1px;
-
+    margin-left: 0px;
+    margin-right: 1px;
 }
 
 @media only screen and (max-width: 900px) {
