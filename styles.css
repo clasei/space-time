@@ -132,12 +132,14 @@ body {
 
 footer a {
     text-decoration: none;
-    color: rgb(92, 97, 255);
-    margin: 2px 3px;
+    font-weight: bold;
+    color: rgb(94, 160, 255);
+    margin: 2px;
     transition: color 0.5s;
 }
 
 footer a:hover {
+    color: rgb(10, 112, 255);
     background-color: pink;
     font-weight: bold;
 }
