@@ -105,14 +105,14 @@ body {
 .hint {
     font-size: 0.8rem;
     padding: 2px;
-    color: rgba(102, 102, 102, 0.9);
+    color: rgba(100, 100, 100, 0.9);
     background-color: rgba(255, 255, 255, 1);
     margin: 50px auto;
+    transition: color 3s;
 }
 
 .hint:hover {
-    color: rgba(102, 102, 102, 0.9);
-    transition: color 3s;
+    color: rgb(100, 100, 100);
     font-weight: bold;
     cursor: none;
 }
