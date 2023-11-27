@@ -140,10 +140,6 @@ body {
     transition: color 1s ease-out;
 }
 
-.code-container svg:hover {
-    fill: rgb(10, 112, 255);
-}
-
 .code-container p {
     margin: 0;
     font-size: 0.75rem;
@@ -173,7 +169,7 @@ body {
     right: 20px;
     border-radius: 5px;
     border-color: lightgray;
-    background-color: rgba(244, 255, 118, 0.3);
+    background-color:  rgba(255, 255, 255, 0.4);
     color: lightgray;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
     transition: background-color 0.7s;
@@ -189,7 +185,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     color: darkslategrey;
     font-size: 0.7em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px 5px;
     width: 100%;
     position: fixed;
