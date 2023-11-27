@@ -126,22 +126,22 @@ body {
     font-family: 'Roboto Mono', monospace;
     z-index: 3;
     color: #444;
+    transition: scale 1s ease-out;
 }
 
 .code-container:hover {
-    scale: 0.9;
-    transition: scale 1s ease-out;
+    scale: 0.9; 
 }
 
 .code-container svg {
     width: 42px;
     height: auto;
     fill: currentColor;
+    transition: color 1s ease-out;
 }
 
 .code-container svg:hover {
-    color: blue;
-    transition: color 1s ease-out;
+    fill: rgb(10, 112, 255);
 }
 
 .code-container p {
@@ -151,13 +151,20 @@ body {
 }
 
 .code-container a {
-    color: #555;
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 1s ease-out;
 }
 
 .code-container a:hover {
     text-decoration: none;
-    color: blue;
-    transition: color 1s ease-out;
+    color: rgb(10, 112, 255);
+}
+
+.code-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .fullscreen-button {
